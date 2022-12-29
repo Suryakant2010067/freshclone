@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="media.css" type="text/css">
+    <link rel="stylesheet" href="home.css" type="text/css">
+    <link rel="stylesheet" href="home.scss" type="text/css">
+    <link rel="stylesheet" href="_colors.scss" type="text/css">
+    <link rel="stylesheet" href="_utilities.scss" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>Hello Fresh Clone | Portfolio Project 2</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="menu">
+            <div class="burger-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <a href="#" class="menu-item">Our Recipe Boxes</a>
+            <div class="drop-item menu-item">
+                <button id="drop-btn1">
+                    How It Works
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <ul class="drop-list hiw-menu">
+                    <a href="#"><li>How it works</li></a>
+                    <a href="#"><li>Sustainability</li></a>
+                    <a href="#"><li>Our Suppliers</li></a>
+                </ul>
+            </div>
+            <div class="drop-item menu-item">
+                <button id="drop-btn2">
+                    Our Recipies
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <ul class="drop-list or-menu">
+                    <a href="#"><li>On The Menu</li></a>
+                    <a href="#"><li>Recipe Hub</li></a>
+                </ul>
+            </div>
+            <a href="#" id="collapse-link1" class="menu-item">Gift Cards Boxes</a>
+            <a href="#" id="collapse-link2" class="menu-item">COVID-19 Updates</a>
+        </div>
+        <div class="log-btn">
+            <a href="#"><button class="log-in">LOG IN</button></a>
+        </div>
+    </nav>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-menu">
+            <button>LOG IN</button>
+            <div class="menu-list-1">
+                <ul>
+                    <li><a href=""><i class="fas fa-list-alt"></i>Our Plans</a></li>
+                    <li><a href=""><i class="fas fa-info-circle"></i>How It Works</a></li>
+                    <li><a href=""><i class="fas fa-list-alt"></i>Our Menus</a></li>
+                </ul>
+            </div>
+            <div class="menu-list-2">
+                <ul>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">COVID-19 Updates</a></li>
+                    <li><a href="">Sustainability</a></li>
+                    <li><a href="">C02 Neutral</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-body"></div>
+    </nav>
+    <header class="showcase">
+        <h1>
+            We save you money, time and stress ! <span id="showcase-text"></span>
+        </h1>
+        <p>
+            Now with more choices every week and meals starting from just £3.44
+        </p>
+        <button id="showcase-button">
+            VIEW OUR BOXES
+        </button>
+    </header>
+    <section class="section-1">
+        <div class="container">
+            <h2>How it works</h2>
+            <ul>
+                <li>Choose your recipes</li>
+                <li><i class="fas fa-circle"></i></li>
+                <li>Pre-measured ingredients for less waste</li>
+                <li><i class="fas fa-circle"></i></li>
+                <li>Delivered safely to your door</li>
+            </ul>
+            <div class="steps">
+                <div class="step">
+                    <img src="hiw-1-v2.png" alt="">
+                    <h4>Choose your meals</h4>
+                    <p>Curated, easy-to-follow recipes every week, customisable by you</p>
+                </div>
+                <div class="step">
+                    <img src="hiw-2-v2.png" alt="">
+                    <h4>Create the perfect box</h4>
+                    <p>Suit your lifestyle with a variety of Extras, including desserts, wine and sides</p>
+                </div>
+                <div class="step">
+                    <img src="hiw-3-v2.png" alt="">
+                    <h4>Get convenient weekly deliveries</h4>
+                    <p>Scheduling made easy, with drop-offs right at your door</p>
+                </div>
+                <div class="step">
+                    <img src="hiw-4-v3.png" alt="">
+                    <h4>Cook seasonal, fresh ingredients</h4>
+                    <p>Food made from scratch in the comfort of your kitchen</p>
+                </div>
+            </div>
+            <button class="l-m">
+                Learn More
+            </button>
+            <p>You can <span>skip a week or cancel</span> at any time</p>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container">
+            <h2>
+                Good for <span>you</span>. Better for the <span>planet.</span><br>
+                Best for your <span>wallet.</span>
+            </h2>
+            <div class="value-area">
+                <img id="main-image" src="desktop_goodforyou-v2.png" alt="">
+                <div class="text-area">
+                    <ul>
+                        <li>
+                            <div class="list-logo">
+                                <img src="cloche-clock.jpg" alt="">
+                            </div>
+                            <div class="list-text">
+                                <h4>Time saver</h4>
+                                <p>We deliver everything you need to create delicious dinners from scratch so you spend less time shopping!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-logo">
+                                <img src="coin.jpg" alt="">
+                            </div>
+                            <div class="list-text">
+                                <h4>Value for money</h4>
+                                <p>We work closely with our trusted suppliers to source fresh, high-quality ingredients for your recipe box.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-logo">
+                                <img src="leaf.jpg" alt="">
+                            </div>
+                            <div class="list-text">
+                                <h4>Cutting food waste</h4>
+                                <p>By giving you the exact amount of ingredients you need, we cut food waste.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="start-btn">
+                        GET STARTED
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="container">
+            <div class="title-area">
+                <h2>
+                    Your box, <strong>your way</strong>
+                </h2>
+                <p>
+                    Flexible options to delight you and customise your weekly box
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card" id="card-1">
+                    <div class="text-area">
+                        <h3>For busy weeknights</h3>
+                        <p>Ready in 20 minutes</p>
+                    </div>  
+                </div>
+                <div class="card" id="card-2">
+                    <div class="text-area">
+                        <h3>Impress your guests</h3>
+                        <p>Flexible box size</p>
+                    </div>  
+                </div>
+                <div class="card" id="card-3">
+                    <div class="text-area">
+                        <h3>Add delicious Extras</h3>
+                        <p>Include desserts, wines and sides</p>
+                    </div>  
+                </div>
+                <div class="card" id="card-4">
+                    <div class="text-area">
+                        <h3>For special occasions</h3>
+                        <p>Treat yourself with Premium meals</p>
+                    </div>  
+                </div>
+            </div>
+            <a href=""><button class="see-menu">SEE OUR MENU</button></a>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="container">
+            <div class="title-area">
+                <h2>
+                    Our Customers eat better every day
+                </h2>
+                <p>
+                    Here are some of the reasons we are getting 4.5 out of 5 stars!
+                </p>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <img src="66.png" alt="">
+                    <div class="text-area">
+                        <p class="customer">
+                            Martine said
+                        </p>
+                        <p>
+                            HelloFresh is great for busy lifestyle and saves you shopping for ingredients etc. Food is fab and it’s a new way of cooking quick meals but so different and tasty 😋
+                        </p>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="review">
+                    <img src="66.png" alt="">
+                    <div class="text-area">
+                        <p class="customer">
+                            Sara said
+                        </p>
+                        <p>
+                            Fantastic food which not only helps me to eat healthier but is teaching me how to cook. All the ingredients are super fresh and the choice of meals means no one is ever disappointed.
+                        </p>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="container">
+            <div class="text-area">
+                <h1>Get started</h1>
+                <p>
+                    Eat healthy, save time from your weekly routine and have a good
+                    time with the HelloFresh cooking family nights
+                </p>
+            </div>
+            <a href=""><button>VIEW OUR BOXES</button></a>
+        </div>
+    </section>
+    <section class="section-6">
+        <div class="container">
+            <div class="text-area">
+                <h3>
+                    Stay updated
+                </h3>
+                <p>
+                    Keep up to date with delicious recipes, offers, and news
+                </p>
+            </div>
+            <form action="">
+                <div class="email-button">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Enter email address">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section-7">
+        <div class="container">
+            <div class="link-lists">
+                <div id="app-dwnload-btn" class="list">
+                    <button>DOWNLOAD OUR APP</button>
+                </div>
+                <div class="list">
+                    <div class="list-toggle">
+                        <h4>HELLOFRESH</h4>
+                        <span class="toggler">+</span>
+                    </div>
+                    <ul class="site-links">
+                        <a href="#"><li>Gift cards</li></a>
+                        <a href="#"><li>Unidays</li></a>
+                        <a href="#"><li>Student Beans</li></a>
+                        <a href="#"><li>Recipes</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Affiliate</li></a>
+                    </ul>
+                </div>
+                <div class="list">
+                    <div class="list-toggle">
+                        <h4>OUR COMPANY</h4>
+                        <span class="toggler">+</span>
+                    </div>
+                    <ul class="site-links">
+                        <a href="#"><li>HelloFresh Group</li></a>
+                        <a href="#"><li>Careers</li></a>
+                        <a href="#"><li>Press</li></a>
+                    </ul>
+                </div>
+                <div class="list">
+                    <div class="list-toggle">
+                        <h4>HELP</h4>
+                        <span class="toggler">+</span>
+                    </div>
+                    <ul class="site-links hide">
+                        <a href="#"><li>Find an answer</li></a>
+                        <a href="#"><li>FAQs</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="app-dwnload">
+                <h3>DOWNLOAD OUR APP</h3>
+                <p>Manage your deliveries from anywhere, anytime.</p>
+                <div class="app-stores">
+                    <a href="">
+                        <img src="appstore-badge-en.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="playstore-badge-en.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="copy-right">
+                <p>&copy; HelloFresh 2020</p>
+            </div>
+            <div class="footer-links">
+                <a href="">Terms and conditions</a>
+                <a href="">Privacy</a>
+                <a href="">Modern Slavery Statement</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/hellofreshuk/"><i class="fab fa-facebook-square" id="facebook"></i></a>
+                <a href="https://twitter.com/HelloFreshUK"><i class="fab fa-twitter" id="twitter"></i></a>
+                <a href="https://www.instagram.com/hellofreshuk/"><i class="fab fa-instagram" id="instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

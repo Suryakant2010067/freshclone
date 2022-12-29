@@ -1,0 +1,542 @@
+@media screen and (min-width: 2500px) {
+    nav {
+        .burger-icon {
+            display: none;
+        }
+
+        .menu-item {
+            margin: 0 0.5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .collapse {
+            visibility: hidden;
+        }
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    header {
+        background-image: url("../img/home/Hero2560x700.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center center;
+        min-height: 700px;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    footer {
+        .container {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 2500px) {
+    nav {
+        .burger-icon {
+            display: none;
+        }
+
+        .menu-item {
+            margin: 0 0.5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .collapse {
+            display: block;
+        }
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    header {
+        background-image: url("../img/home/Hero2560x700.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center center;
+        min-height: 700px;
+
+        p {
+            font-size: 18px;
+        }
+
+    }
+
+    footer {
+        .container {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    header {
+        background-image: url("../img/home/Hero2560x700.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center center;
+    }
+
+    #nav {
+        height: 10vh;
+        padding: 0 1rem;
+        font-size: 1rem;
+
+        .log-btn {
+            button {
+                margin-top: 5px;
+                font-size: 0.5rem;
+                padding: 14px 16px;
+                width: 100px;
+                height: 80%;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .showcase {
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+
+            span {
+                margin: 1rem auto 0 auto;
+                display: block;
+                width: 50%;
+            }
+        }
+
+        p {
+            margin-top: 0.5rem;
+            width: 50%;
+            font-weight: 100;
+        }
+    }
+
+    .container {
+        width: 100%;
+        padding: 2rem;
+
+        .steps {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 1126px) {
+    #collapse-link2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-5 {
+        background-image: url("../img/home/Bottom-hero.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    header {
+        background-image: url("../img/home/hero-desktop1199px.jpg");
+        min-height: 650px;
+    }
+
+    #collapse-link1 {
+        display: none;
+    }
+
+    .section-5 {
+        background-image: url("../img/home/bottom_banner_1024px.jpg");
+
+        .container {
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-2 {
+        .container {
+            .value-area {
+                flex-direction: column;
+    
+                #main-image {
+                    max-width: 90%;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    nav {
+        .burger-icon {
+            display: inline-block;
+        }
+
+        .menu-item {
+            visibility: hidden;
+        }
+
+        .drop-item {
+            visibility: hidden;
+        }
+
+        .log-btn {
+            visibility: hidden;
+        }
+
+        .logo {
+            margin-left: 45%;
+        }
+    }
+
+    .mobile-nav {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: all 0.1s ease-in;
+        z-index: 104;
+
+        &.menu-on {
+            transform: translateX(0);
+        }
+
+        .mobile-nav-menu {
+            width: 35%;
+            padding: 1rem;
+            background-color: #fff;
+            
+            button {
+                width: 100%;
+                padding: 0.75rem 1.5rem;
+                margin-bottom: 1.5rem;
+                border: 1px solid $primary-color;
+                border-radius: 0.3rem;
+                background-color: transparent;
+                color: $primary-color;
+                font-size: 1rem;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    border: 1.3px solid darken($primary-color, 10%);
+                }
+            }
+
+            .menu-list-1 {
+                width: 100%;
+                border-bottom: solid 1px #e8e8e8;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 1.5rem;
+
+                        i.fas {
+                            color: #343434;
+                            margin-right: 0.75rem;
+                            height: 24px;
+                            width: 24px;
+                        }
+
+                        a {
+                            font-size: 1rem;
+                            letter-spacing: 0.2px;
+                            line-height: 1.15;
+                        }
+                    }
+                }
+            }
+
+            .menu-list-2 {
+                ul {
+                    li {
+                        padding: 1.5rem 0 1.5rem 0;
+
+                        &:nth-child(3n+0) {
+                            border-top: solid 1px #e8e8e8;
+                            border-bottom: solid 1px #e8e8e8;
+                        }
+                    }
+
+                }
+            }
+            @media screen and (max-width: 550px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 80%;
+            }
+        }
+        .mobile-body {
+            width: 65%;
+            background-color: #343434;
+            opacity: 0.2;
+        }
+    }
+
+    header {
+        background-image: url("../img/home/Hero767x410.jpg");
+        background-size: cover;
+        min-height: 410px;
+    }
+
+    .section-1 {
+        .container {
+            height: auto;
+
+            ul {
+                flex-direction: column;
+
+                :nth-child(even) {
+                    display: none;
+                }
+
+                li {
+                    padding: 0;
+                }
+            }
+
+            li {
+                padding: 0;
+                font-size: 14px;
+            }
+
+            .steps {
+                padding: 0;
+                margin-bottom: 1.5rem;
+                flex-wrap: wrap;
+                min-height: auto;
+                .step {
+                    min-width: auto;
+                    flex-basis: 45%;
+                    min-height: 350px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-3 {
+        .container {
+            padding: 0;
+
+            .cards {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .section-5 {
+        background-image: url("../img/home/bottom_banner_tablet.jpg");
+        background-size: cover;
+    }
+
+    .section-7 {
+        padding: 0;
+
+        .container {
+            padding: 0;
+
+            .link-lists {
+                flex-direction: column;
+                flex: 40%;
+                .list {
+                    border: 2px solid whitesmoke;
+
+                    .list-toggle {
+                        width: 100%;
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        .app-dwnload {
+            opacity: 0;
+        }
+    }
+
+    footer {
+        height: auto;
+        padding: 0;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            padding: 0;
+            .copy-right {
+                text-align: center;
+                margin: 2rem auto 1rem auto;
+            }
+
+            .social-media {
+                margin: 1rem auto 2rem auto;
+                text-align: center;
+            }
+
+            .footer-links {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    nav {
+        .logo {
+            margin-left: 35%;
+        }
+    }
+
+    header {
+        background-image: url("../img/home/Hero-mobile-small.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        padding: 2rem;
+
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1rem;
+
+            span {
+                padding-top: 0.5rem;
+            }
+        }
+
+        p {
+            margin: 0;
+            min-width: 70%;
+            font-size: 1rem;
+        }
+    }
+
+    .section-1 {
+        .container {
+            padding: 0;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            h2 {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .steps {
+            margin: 1rem 0 1rem 0;
+            
+            .step {
+                flex-basis: 90%;
+                min-width: 80%;
+            }
+        }
+    }
+
+    .section-2 {
+        .value-area {
+            flex-direction: column;
+
+            #main-image {
+                min-width: 90%;
+            }
+        }
+    }
+
+    .section-4 {
+        .container {
+            padding: 1rem;
+
+            .reviews {
+                flex-direction: column;
+
+                :nth-child(odd) {
+                    margin-bottom: 1rem;
+                }
+
+                .review {
+                    img {
+                        height: 22px;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-5 {
+        background-image: url("../img/home/bottom_banner_mobile.jpg");
+        background-size: contain;
+        background-position: 400px center;
+        background-repeat: no-repeat;
+
+        .container {
+            padding: 0;
+
+            .text-area {
+                h3 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+
+    .section-6 {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    nav {
+        .logo {
+            margin-left: 25%;
+        }
+    }
+}
